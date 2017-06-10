@@ -1,25 +1,30 @@
 {
-    "name": "helloworld",
-    "displayName": "HelloCordova",
+    "name": "cordova-template-ts-react",
     "version": "0.0.1",
     "private": true,
-    "description": "A sample Apache Cordova application that responds to the deviceready event.",
-    "main": "index.js",
+    "description": "Boilerplate for a typescript/react cordova project.",
+    "main": "www/app.bundle.js",
     "scripts": {
         "start": "webpack-dev-server --open",
-        "browser": "cordova run browser",
+        "android": "npm run bundle && cordova run android",
+        "postinstall": "cordova prepare",
         "test": "echo \"Error: no test specified\" && exit 1",
         "bundle": "webpack"
     },
-    "author": "Apache Cordova Team",
-    "license": "Apache-2.0",
+    "author": "Dan Steren",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dansteren/cordova-template-ts-react.git"
+    },
     "dependencies": {
+        "cordova-android": "^6.2.3",
         "es6-promise": "^4.1.0",
         "react": "^15.5.4",
         "react-dom": "^15.5.4"
     },
     "devDependencies": {
         "awesome-typescript-loader": "^3.1.3",
+        "cordova": "^7.0.1",
         "tslint": "^5.4.3",
         "typescript": "^2.3.4",
         "webpack": "^2.6.1",
@@ -27,6 +32,8 @@
     },
     "cordova": {
         "plugins": {},
-        "platforms": []
+        "platforms": [
+            "android"
+        ]
     }
 }
