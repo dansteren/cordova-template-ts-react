@@ -6,7 +6,7 @@
     "declaration": false,
     "baseUrl": "./",
     "paths": {
-      "~/*": [ "www/src/*" ]
+      "~/*": [ "src/*" ]
     },
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,

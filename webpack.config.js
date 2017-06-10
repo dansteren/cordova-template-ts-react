@@ -2,11 +2,11 @@ var path = require('path');
 var TsConfigPathsPlugin = require('awesome-typescript-loader').TsConfigPathsPlugin;
 
 module.exports = {
-  entry: './www/src/index.tsx',
+  entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'www/build/'),
-    publicPath: '/build/',
-    filename: 'src.bundle.js',
+    path: path.resolve(__dirname, 'www/'),
+    publicPath: '',
+    filename: 'app.bundle.js',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

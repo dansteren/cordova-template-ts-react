@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/www/build/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 84);
@@ -9538,7 +9538,7 @@ var App = (function (_super) {
         return _super.call(this) || this;
     }
     App.prototype.render = function () {
-        return React.createElement("div", null, 'Hello Dano');
+        return React.createElement("div", null, 'Hello World');
     };
     return App;
 }(React.Component));
