@@ -5,6 +5,7 @@ module.exports = {
   entry: './www/src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'www/build/'),
+    publicPath: '/build/',
     filename: 'src.bundle.js',
   },
   resolve: {
@@ -21,4 +22,7 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+     contentBase: path.join(__dirname, 'www')
+  }
 }
